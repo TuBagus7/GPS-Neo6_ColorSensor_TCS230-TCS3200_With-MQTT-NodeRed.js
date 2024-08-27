@@ -19,7 +19,7 @@ WiFiClient wifi;
 MQTTClient mqtt;
 NusabotSimpleTimer timer;
 
-// unsigned int move_index;         // moving index, to be used later
+     // moving index, to be used later
 unsigned int move_index = 1; // fixed location for now
 static const uint32_t GPSBaud = 9600;
 
