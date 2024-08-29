@@ -164,35 +164,35 @@ void loop()
   Serial.print (Blue);
 
 
-  if(Red>15&&Red<25&&Green>15&&Green<25&&Blue>15&&Blue<25){ //parameter masing-masing uang harus dikalibrasi manual
+  if(Red >=20 && Red <=22 && Green >18 && Green <=21 && Blue >13 && Blue <17){ //parameter masing-masing uang harus dikalibrasi manual
+    Uang = Uang + 2000;
+    statusUang = !statusUang;
+    Serial.println("2rb"); 
+
+  }else if(Red >=12 && Red <=21 && Green >=10 && Green < 20 && Blue >= 10 && Blue < 20){ //parameter masing-masing uang harus dikalibrasi manual
+    Uang = Uang + 5000;
+    statusUang = !statusUang;
+    Serial.println("5rb");
+
+  }else if(Red >= 25 && Red <28 && Green >=26 && Green <28 && Blue >=18 && Blue <=20){ //parameter masing-masing uang harus dikalibrasi manual
+    Uang = Uang + 10000;
+    statusUang = !statusUang;
+    Serial.println("10rb");
+
+  }else if(Red >=21 && Red <23 && Green >= 20 && Green <= 21 && Blue > 17 && Blue <20){ //parameter masing-masing uang harus dikalibrasi manual
     Uang = Uang + 20000;
     statusUang = !statusUang;
-    Serial.println("20rb"); 
+    Serial.println("20 rb");
 
   }else if(Red>15&&Red<25&&Green>15&&Green<25&&Blue>15&&Blue<25){ //parameter masing-masing uang harus dikalibrasi manual
-    Uang = Uang + 100000;
-    statusUang = !statusUang;
-    Serial.println("100rb");
-
-  }else if(Red > 20 && Red <= 26 && Green >= 19 && Green <= 23 && Blue > 14 && Blue <= 19){ //parameter masing-masing uang harus dikalibrasi manual
     Uang = Uang + 50000;
     statusUang = !statusUang;
     Serial.println("50rb");
 
   }else if(Red>15&&Red<25&&Green>15&&Green<25&&Blue>15&&Blue<25){ //parameter masing-masing uang harus dikalibrasi manual
-    Uang = Uang + 2000;
+    Uang = Uang + 100000;
     statusUang = !statusUang;
-    Serial.println("2rb");
-
-  }else if(Red>15&&Red<25&&Green>15&&Green<25&&Blue>15&&Blue<25){ //parameter masing-masing uang harus dikalibrasi manual
-    Uang = Uang + 5000;
-    statusUang = !statusUang;
-    Serial.println("5rb");
-
-  }else if(Red>15&&Red<25&&Green>15&&Green<25&&Blue>15&&Blue<25){ //parameter masing-masing uang harus dikalibrasi manual
-    Uang = Uang + 10000;
-    statusUang = !statusUang;
-    Serial.println("10rb");
+    Serial.println("100rb");
 
   }else if(Red>15&&Red<25&&Green>15&&Green<25&&Blue>15&&Blue<25){ //parameter masing-masing uang harus dikalibrasi manual
     Uang = Uang + 1000;
